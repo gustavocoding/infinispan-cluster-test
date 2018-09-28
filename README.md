@@ -14,6 +14,7 @@ The logs will be at ```SERVER_HOME/logs/server0```, ```SERVER_HOME/logs/server1`
 
 #### Enabling trace
 
+
 ```
-mvn -DenableTrace=true -Dserver.location=<SERVER_HOME> test -s maven-settings.xml
+mvn -DenableTrace=org.infinispan,org.jgroups -Dserver.location=<SERVER_HOME> test -s maven-settings.xml
 ```
